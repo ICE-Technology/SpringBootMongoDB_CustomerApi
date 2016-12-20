@@ -72,7 +72,7 @@ import com.ice.mongodb.models.CustomerRepository;
 		public Map<String, Object> delete(@RequestParam String customerId) {
 			customerRepository.delete(customerId);
 			Map<String, Object> dataMap = new HashMap<String, Object>();
-			dataMap.put("message", "customer deleted successfully");
+			dataMap.put("message", "customer deleted successfully test comment");
 			dataMap.put("status", "1");
 		    return dataMap;
 		}
